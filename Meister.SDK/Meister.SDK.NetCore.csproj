@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Meister.SDK.NetCore</AssemblyName>
+    <RootNamespace>Meister.SDK.NetCore</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Meister.SDK.pfx</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>3.20.04.25</Version>
+    <Authors>ARosenthal</Authors>
+    <Company>Gateway Architects, LLC</Company>
+    <Product>Meister V2</Product>
+    <Copyright>Gateway Architects, LLC</Copyright>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageIcon>Meister.jpg</PackageIcon>
+    <PackageProjectUrl>www.meisterapplications.com</PackageProjectUrl>
+    <PackageReleaseNotes>Compiled for .Net Core 3.1</PackageReleaseNotes>
+    <Description>Meister V2 SDK</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MeisterCore.NetCore" Version="3.20.4.16" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Licenses\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="Licenses\Meister.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
